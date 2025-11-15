@@ -1,0 +1,118 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format-schema.json",
+  "name": "GKIDS Premium Luxury Design System",
+  "description": "Premium black & gold design tokens for GKIDS strategic presentation",
+  "color": {
+    "primary": {
+      "gold": {
+        "300": { "value": "#FFED4E", "type": "color", "description": "Subtle highlights, borders" },
+        "500": { "value": "#FFD700", "type": "color", "description": "Key metrics, CTAs, main gold accent" },
+        "700": { "value": "#B8860B", "type": "color", "description": "Hover states, secondary gold" }
+      }
+    },
+    "neutral": {
+      "black": {
+        "900": { "value": "#000000", "type": "color", "description": "Primary background" },
+        "800": { "value": "#0A0A0A", "type": "color", "description": "Card backgrounds, elevated surfaces" }
+      },
+      "gray": {
+        "700": { "value": "#1A1A1A", "type": "color", "description": "Dividers, subtle borders" },
+        "500": { "value": "#4A4A4A", "type": "color", "description": "Body text on black" },
+        "300": { "value": "#9E9E9E", "type": "color", "description": "Secondary text, captions" }
+      },
+      "white": { "value": "#FFFFFF", "type": "color", "description": "Headings, primary text" }
+    },
+    "semantic": {
+      "success": { "value": "#10B981", "type": "color", "description": "Positive metrics" },
+      "alert": { "value": "#EF4444", "type": "color", "description": "Negative indicators" }
+    },
+    "background": {
+      "primary": { "value": "{color.neutral.black.900}", "type": "color" },
+      "elevated": { "value": "{color.neutral.black.800}", "type": "color" }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "display": { "value": "'Playfair Display', 'Cormorant Garamond', serif", "type": "fontFamily" },
+      "heading": { "value": "'Montserrat', 'Inter', sans-serif", "type": "fontFamily" },
+      "body": { "value": "'Inter', 'Source Sans Pro', sans-serif", "type": "fontFamily" }
+    },
+    "fontSize": {
+      "display-1": { "value": "72px", "type": "dimension", "description": "Hero headlines" },
+      "display-2": { "value": "56px", "type": "dimension", "description": "Section titles" },
+      "heading-1": { "value": "48px", "type": "dimension", "description": "Primary headings" },
+      "heading-2": { "value": "36px", "type": "dimension", "description": "Subsection headings" },
+      "heading-3": { "value": "24px", "type": "dimension", "description": "Card titles" },
+      "body-large": { "value": "20px", "type": "dimension" },
+      "body": { "value": "16px", "type": "dimension" },
+      "body-small": { "value": "14px", "type": "dimension" },
+      "number-display": { "value": "64px", "type": "dimension", "description": "Large metrics" },
+      "number-metric": { "value": "32px", "type": "dimension", "description": "Data cards" }
+    },
+    "fontWeight": {
+      "regular": { "value": "400", "type": "number" },
+      "semibold": { "value": "600", "type": "number" },
+      "bold": { "value": "700", "type": "number" }
+    },
+    "lineHeight": {
+      "tight": { "value": "1.1", "type": "number", "description": "Display, large numbers" },
+      "snug": { "value": "1.2", "type": "number", "description": "Headings" },
+      "normal": { "value": "1.5", "type": "number", "description": "Small text" },
+      "relaxed": { "value": "1.6", "type": "number", "description": "Body text" }
+    },
+    "letterSpacing": {
+      "tight": { "value": "-0.02em", "type": "dimension" },
+      "normal": { "value": "0", "type": "dimension" },
+      "wide": { "value": "+0.1em", "type": "dimension", "description": "Uppercase labels" }
+    }
+  },
+  "spacing": {
+    "xs": { "value": "8px", "type": "dimension" },
+    "sm": { "value": "16px", "type": "dimension" },
+    "md": { "value": "24px", "type": "dimension" },
+    "lg": { "value": "32px", "type": "dimension" },
+    "xl": { "value": "48px", "type": "dimension" },
+    "2xl": { "value": "64px", "type": "dimension" },
+    "3xl": { "value": "96px", "type": "dimension" },
+    "4xl": { "value": "128px", "type": "dimension" }
+  },
+  "borderRadius": {
+    "sm": { "value": "4px", "type": "dimension" },
+    "md": { "value": "8px", "type": "dimension" },
+    "lg": { "value": "12px", "type": "dimension" },
+    "xl": { "value": "16px", "type": "dimension" }
+  },
+  "boxShadow": {
+    "card": { 
+      "value": "0 4px 12px rgba(0,0,0,0.4)", 
+      "type": "shadow",
+      "description": "Elevated cards"
+    },
+    "card-hover": { 
+      "value": "0 8px 24px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,215,0,0.2)", 
+      "type": "shadow",
+      "description": "Card hover with gold glow"
+    },
+    "glow-gold": { 
+      "value": "0 0 20px rgba(255,215,0,0.3), 0 0 40px rgba(255,215,0,0.15)", 
+      "type": "shadow",
+      "description": "Gold accent glow"
+    },
+    "text-gold": { 
+      "value": "0 2px 8px rgba(255,215,0,0.4)", 
+      "type": "shadow",
+      "description": "Text shadow for gold"
+    }
+  },
+  "animation": {
+    "duration": {
+      "fast": { "value": "200ms", "type": "duration" },
+      "base": { "value": "300ms", "type": "duration" },
+      "slow": { "value": "400ms", "type": "duration" },
+      "luxury": { "value": "600ms", "type": "duration" }
+    },
+    "easing": {
+      "luxury": { "value": "cubic-bezier(0.4, 0, 0.2, 1)", "type": "cubicBezier" }
+    }
+  }
+}
